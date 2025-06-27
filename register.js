@@ -25,7 +25,7 @@
         // Buat tombol untuk isi ulang password
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.textContent = '↻ Gunakan Password Default';
+        btn.textContent = 'Contoh Rekomendasi Kata Sandi';
         btn.style.cssText = `
             margin: 6px 0 12px;
             padding: 8px 12px;
@@ -68,7 +68,7 @@
             }
             fadingIn = !fadingIn; // Toggle direction for next cycle
         }, 400);
-            nyusahin.textContent = '↻ Refresh Captcha Sampai Jelas (4 Angka)';
+            nyusahin.textContent = 'Contoh Rekomendasi Kata Sandi';
             nyusahin.style.cssText = `
                 margin: 5px;
                 font-size: 12px;
