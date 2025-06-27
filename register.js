@@ -5,7 +5,7 @@
         const randomIndex = Math.floor(Math.random() * array.length);
         return array[randomIndex];
         }
-    const base = ["gacor", "mantap", "menang" , "situs" , "jekpot", "bandar", "resmi" , "masuk"];
+    const base = ["jekpot", "mantap", "menang"];
     const lucu = getRandomString(base);
     console.log(lucu);
 
