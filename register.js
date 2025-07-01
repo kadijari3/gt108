@@ -25,7 +25,7 @@
         // Buat tombol untuk isi ulang password
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.textContent = 'Contoh Rekomendasi Kata Sandi';
+        btn.textContent = '↻ Contoh Kata Sandi Rekomendasi';
         btn.style.cssText = `
             margin: 6px 0 12px;
             padding: 8px 12px;
@@ -68,12 +68,13 @@
             }
             fadingIn = !fadingIn; // Toggle direction for next cycle
         }, 400);
-            nyusahin.textContent = 'Contoh Rekomendasi Kata Sandi';
+            nyusahin.textContent = '↻ Refresh Captcha Sampai Jelas dan Isi 4 Angka';
             nyusahin.style.cssText = `
                 margin: 5px;
                 font-size: 12px;
                 color: #ffea00;
                 font-weight: bold;
+                transition: opacity 0.4s;
             `;
             captchaInput.parentNode.insertBefore(nyusahin, captchaInput);
         }
@@ -90,7 +91,7 @@
         // Buat tombol untuk isi ulang password
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.textContent = '↻ Gunakan Password Default';
+        btn.textContent = '↻ Contoh Kata Sandi Rekomendasi';
         btn.style.cssText = `
             margin: 6px 0 12px;
             padding: 8px 12px;
@@ -133,12 +134,13 @@
             }
             fadingIn = !fadingIn; // Toggle direction for next cycle
         }, 400);
-            nyusahin.textContent = '↻ Refresh Captcha Sampai Jelas (4 Angka)';
+            nyusahin.textContent = '↻ Refresh Captcha Sampai Jelas dan Isi 4 Angka';
             nyusahin.style.cssText = `
                 margin: 5px;
                 font-size: 12px;
                 color: #ffcc00;
                 font-weight: bold;
+                transition: opacity 0.4s;
             `;
             captchaInput.parentNode.insertBefore(nyusahin, captchaInput);
         }
