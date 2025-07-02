@@ -1,0 +1,63 @@
+.gt108menyala {
+      font-family: Gotham, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index:9999;
+      display: none;
+      position: fixed;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: linear-gradient(#ffe71d, #ff6d01);
+      color: #000000;
+      padding-right: 12px;
+      padding-left: 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      min-width: 150px; /* Lebar minimal 200px */
+      max-width: 400px;
+      font-weight: bold;
+      border-style: solid;
+      border-color: #ffe71d;
+      border-width: 1px;
+    }
+
+    .gt108menyala span {
+      font-weight: bold;
+      background: linear-gradient(to bottom, #dd0000, #5a0000);
+      -webkit-background-clip: text;
+              background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gt108menyala.show {
+      display: block;
+      animation: slideIn 0.5s ease, fadeOut 0.5s ease 4.5s;
+    }
+    
+    .endul{
+      text-align: center;
+      font-weight: bold;
+      line-height: 3px;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50%) translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
